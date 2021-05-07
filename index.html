@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <title id="title">Xiaomi India | Mobile | TV | Smart Home | Lifestyle - Mi India</title>
+</head>
+
+<body>
+
+  <div class="modal" id="modal">
+    <div id="leftSidebar">
+      <img src="img/side.png" alt="">
+    </div>
+    <div id="rightSidebar">
+      <nav id="nav">
+        <div id="logo">
+          <img src="img/mi-logo.jiif" alt="">
+        <h3>Mi Account</h3>
+        </div>
+
+        <div id="linksDiv">
+          <a>User Agreement</a>
+          <a>Privacy Policy</a>
+          <a>Need Help?</a>|
+          <a>Select Your Language</a>
+        </div>
+      </nav>
+
+      <div id="main">
+        <div id="header">
+          <h5 id="signInForm">Sign In</h5>
+          <h5 id="createAccountForm">Create an Account</h5>
+        </div>
+      </div>
+
+      <div class="modal-content" id="modal-cont1">
+        <div id="inputs">
+          <input type="text" name="email" id="email" placeholder="Email/Phone/Mi Account" class="inputField" required>
+          <br>
+          <br>
+          <input type="password" name="password" id="password" placeholder="Password" class="inputField" required>
+          <br>
+          <br>
+          <button type="submit" id="signIn" class="account">Sign In</button>
+          <div id="choice">
+            <a class="orange">Forgot password?</a>
+            <a class="orange">Sign in using phone</a>
+          </div>
+
+          <div id="moreOptions">
+            <h3>More options</h3>
+            <div id="signInIcons">
+              <a class="fa fa-facebook"></a>
+            <a class="fa fa-google"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="modal-content" id="modal-cont2">
+        <div id="inputs">
+          <select name="region" id="region" placeholder="Region" class="inputField">
+            <option>America</option>
+            <option>Bangladesh</option>
+            <option>Canada</option>
+            <option>Denmark</option>
+            <option>England</option>
+            <option>Finland</option>
+            <option>Germany</option>
+            <option>Hong Kong</option>
+            <option>Ireland</option>
+            <option>Kerala</option>
+            <option>London</option>
+            <option>Malasiya</option>
+            <option>Nepal</option>
+            <option>Odisha</option>
+            <option>Tokyo</option>
+            <option>Wasington</option>
+          </select>
+          <br>
+          <br>
+          <div id="inputCont">
+            <select name="countryCde" id="countryCde" class="inputField"></select>
+            <input type="number" placeholder="Phone Number" class="inputField">
+          </div>
+          <br>
+          <br>
+          <div id="verify">
+            <input type="text" class="inputField" placeholder="Verification Code">
+            <button type="submit" class="orange btn" id="verifyBtn">Get Verification Code</button>
+          </div>
+          <button type="submit" id="createAccount" class="account">Create an Account</button>
+          <div id="choice">
+            <a class="orange">Can't receive verification code?</a>
+            <a class="orange">Use an email address</a>
+          </div>
+
+          <div id="moreOptions">
+            <h3>More options</h3>
+            <div id="signInIcons">
+              <a class="fa fa-facebook"></a>
+            <a class="fa fa-google"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav id="topNav">
+    <!-- FIRST DIV -->
+    <div id="store">
+      <a>MI INDIA</a>|
+      <a>GET MI STORE APP</a>|
+      <a>ONLINE HELP</a>
+      <a>
+        <span>RETAIL STORE</span>
+        <span class="fa fa-angle-down"></span>
+      </a>
+    </div>
+
+    <!-- SECOND DIV -->
+    <div id="second">
+      <a id="signInBtn">Sign in   |</a>
+      <a id="signUpBtn">Sign Up    |</a>
+      <a>
+        <span id="cartIcon" class="fa fa-shopping-cart"></span>
+        <span>Cart</span>
+        <span id="itemCount">(0)</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- <header>
+      <img src="img/mi-logo.jiif">
+
+      <p>Mi Phones</p>
+      <p>Redmi Phones</p>
+      <p>TV</p>
+      <p>Laptops</p>
+      <p>Fitness & Lifestyle</p>
+      <p>Home</p>
+      <p>Audio</p>
+      <p>Accessories</p>
+    </header> -->
+
+  <!-- carousel -->
+  <div id="sideshow" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#sideshow" data-slide-to="0" class="active"></li>
+      <li data-target="#sideshow" data-slide-to="1"></li>
+      <li data-target="#sideshow" data-slide-to="2"></li>
+      <li data-target="#sideshow" data-slide-to="3"></li>
+      <li data-target="#sideshow" data-slide-to="4"></li>
+      <li data-target="#sideshow" data-slide-to="5"></li>
+      <li data-target="#sideshow" data-slide-to="6"></li>
+      <li data-target="#sideshow" data-slide-to="7"></li>
+      <li data-target="#sideshow" data-slide-to="8"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/c1.png">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c2.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c3.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c4.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c5.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c6.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c7.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/c8.jpg">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#sideshow" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#sideshow" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div id="cards">
+    <div class="card">
+      <img src="img/card1.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="img/card2.png" alt="">
+    </div>
+    <div class="card">
+      <img src="img/card3.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="heading">
+    <div class="line"></div>
+    <p>STAR PRODUCTS</p>
+    <div class="line"></div>
+  </div>
+
+  <div id="mainCont">
+
+    <div id="c">
+      <div id="item1" class="item products">
+        <img src="img/item1.jpg" alt="">
+      </div>
+
+      <div id="b">
+        <div id="a">
+
+          <div id="item2" class="item products">
+            <img src="img/item2.jpg" alt="">
+          </div>
+
+          <div id="item3" class="item products">
+            <img src="img/item3.png" alt="">
+          </div>
+
+        </div>
+
+        <div id="item4 " class="item products">
+          <img src="img/item4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="heading">
+    <div class="line"></div>
+    <p>HOT ACCESSORIES</p>
+    <div class="line"></div>
+  </div>
+
+  <div id="links">
+    <a>Music Store</a>
+    <a>Smart Devices</a>
+    <a class="active">Home</a>
+    <a>Lifestyle</a>
+    <a>Mobile Accessories</a>
+  </div>
+
+  <div id="hotAccessoris">
+
+    <div id="poster" class="item scale">
+      <img src="img/nightLight.jpg" alt="">
+    </div>
+    <div id="otherItems">
+      <div id="cont1">
+
+        <div class="itemCont item scale" id="product1">
+          <div>
+            <img src="img/purifier.jpg" class="img">
+          </div>
+          <p class="name">
+            Mi Air Purifier 3
+          </p>
+          <p class="cost">₹ 9,999</p>
+        </div>
+
+        <div class="itemCont item scale" id="product2">
+          <div>
+            <img src="img/purifier2.jpg" class="img">
+          </div>
+          <p class="name">
+            Mi Air Purifier 2C
+          </p>
+          <p class="cost">₹ 6,999</p>
+        </div>
+
+        <div class="itemCont item scale" id="product3">
+          <div>
+            <img src="img/router.jpg  " class="img">
+          </div>
+          <p class="name">
+            Mi Router 4C
+          </p>
+          <p class="cost">₹ 999</p>
+        </div>
+
+      </div>
+      <div id="cont2">
+        <div class="itemCont item scale" id="product1">
+          <div>
+            <img src="img/box.png" class="img">
+          </div>
+          <p class="name">
+            Mi Box 4K
+          </p>
+          <p class="cost">₹ 3,499</p>
+        </div>
+
+        <div class="itemCont item scale" id="product2">
+          <div>
+            <img src="img/bulb.jpg" class="img">
+          </div>
+          <p class="name">
+            Mi LED Wi-Fi Smart Bulb
+          </p>
+          <p class="cost">₹ 1,299</p>
+        </div>
+
+        <div class="itemCont item scale" id="product3">
+          <div>
+            <img src="img/more.png  " class="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="heading">
+    <div class="line"></div>
+    <p>Product Reviews</p>
+    <div class="line"></div>
+  </div>
+
+
+  <div id="productReviews">
+    <div class="review item scale">
+      <img src="img/cameras.jpg" alt="">
+      <div class="about">
+        <p class="itemName">
+          PRO CAMERAS, MAX PERFORMANCE
+        </p>
+        <div class="nameAndcost">
+          <p class="name">
+            REDMI NOTE 9 PRO MAX
+          </p>
+          <p class="cost">₹ 16,999 </p>
+        </div>
+      </div>
+    </div>
+    <div class="review item scale">
+      <img src="img/smart.png" alt="">
+      <div class="about">
+        <p class="itemName">
+          TRULY SMART. TRULY SAFE. TRULY CONVENIENT....
+        </p>
+        <div class="nameAndcost">
+          <p class="name">
+            MI SMART WATER PURIFIER
+          </p>
+          <p class="cost">₹ 12,999</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="heading">
+    <div class="line"></div>
+    <p>Videos</p>
+    <div class="line"></div>
+  </div>
+
+  <div id="videosCont">
+    <div class="video">
+      <img src="img/v1.png" alt="">
+      <a class="VideoPlay">
+        <span class="fa fa-play playBtn"></span>
+        <span class="videoTitle">Redmi Note 10 Pro Max</span>
+      </a>
+    </div>
+    <div class="video">
+      <img src="img/v2.jpg" alt="">
+      <a class="VideoPlay">
+        <span class="fa fa-play playBtn"></span>
+        <span class="videoTitle">Mi 10</span>
+      </a>
+    </div>
+    <div class="video">
+      <img src="img/v3.jpg" alt="">
+      <a class="VideoPlay">
+        <span class="fa fa-play playBtn"></span>
+        <span class="videoTitle">Mi Mix Alpha</span>
+      </a>
+    </div>
+  </div>
+  </div> -->
+
+  <div class="heading">
+    <div class="line"></div>
+    <p>In the Press</p>
+    <div class="line"></div>
+  </div>
+
+  <!-- slideshow2 -->
+  <div id="sideshow2" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#sideshow2" data-slide-to="1"></li>
+      <li data-target="#sideshow2" data-slide-to="0" class="active"></li>
+      <li data-target="#sideshow2" data-slide-to="2"></li>
+      <li data-target="#sideshow2" data-slide-to="3"></li>
+      <li data-target="#sideshow2" data-slide-to="4"></li>
+      <li data-target="#sideshow2" data-slide-to="5"></li>
+      <li data-target="#sideshow2" data-slide-to="6"></li>
+      <li data-target="#sideshow2" data-slide-to="7"></li>
+      <li data-target="#sideshow2" data-slide-to="8"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/p1.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p2.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p3.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p4.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p5.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p6.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p7.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p8.jpg">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#sideshow2" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#sideshow2" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- features -->
+  <div id="features">
+    <div class="feature">
+      <div class="icon">
+        <i class="fa fa-refresh color-grey"></i>
+      </div>
+      <div class="text">
+        <p>Hassle-free replacement</p>
+        <a class="color-grey">10-days easy replacement policy on mi.com</a>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon">
+        <i class="fa fa-paypal color-grey"></i>
+      </div>
+      <div class="text">
+        <p>100% secure payments</p>
+        <a class="color-grey">We support cards, wallets, EMI and COD</a>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon">
+        <i class="fa fa-map-o color-grey"></i>
+      </div>
+      <div class="text">
+        <p>Vast service network</p>
+        <a class="color-grey">1000 mi service-centers across 600 cities</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- above footer -->
+  <div id="last">
+    <div id="touch">
+      <div id="textCont">
+        <h5>LET'S STAY IN TOUCH</h5>
+        <p>Get updates on sales specials and more</p>
+      </div>
+
+      <div id="input">
+        <input type="text" name="input" id="input" placeholder="Enter Email Address">
+      </div>
+    </div>
+
+    <div id="follow">
+      <div id="followText">
+        <h5>Follow MI</h5>
+        <p>We wnat to hear from you</p>
+      </div>
+
+      <div id="followLinks">
+        <a class="fa fa-facebook color-grey"></a>
+        <a class="fa fa-youtube color-grey"></a>
+        <a class="fa fa-instagram color-grey"></a>
+        <a class="fa fa-twitter color-grey"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="first">
+      <div id="support">
+        <h6>SUPPORT</h6>
+        <ul>
+          <li>
+            Online Help
+          </li>
+          <li>
+            Customer Service
+          </li>
+          <li>
+            Shipping FAQ
+          </li>
+          <li>
+            Service Centres
+          </li>
+          <li>
+            Warranty
+          </li>
+          <li>
+            Mi Exchange
+          </li>
+          <li>
+            Bulk Orders
+          </li>
+          <li>
+            User Guide
+          </li>
+          <li>
+            Laptop Drivers
+          </li>
+          <li>
+            Mi Screen Protect
+          </li>
+          <li>
+            Mi Extended Warranty
+          </li>
+        </ul>
+      </div>
+      <div id="shopAndLearn">
+        <h6>SHOP AND LEARN</h6>
+        <ul>
+          <li>Mi 10i / Mi 10T Series</li>
+          <li>Mi 11 Ultra / Mi 11X / Mi 11X <br> Pro</li>
+          <li> Redmi 8 / Redmi 9 / Redmi <br> 9 Prime</li>
+          <li>Redmi 9i / Redmi 9A <br>
+            Redmi Note 10 / Redmi Note 10 Pro <br> Redmi Note 10 Pro <br> Max
+          </li>
+          <li>Redmi Note 9 Pro / Redmi Note 9 <br> Redmi Note 9 <br> Pro Max</li>
+          <li>TVs / Laptops</li>
+        </ul>
+  
+      </div>
+      <div id="retailStore">
+        <h6>RETAIL STORE</h6>
+        <ul>
+          <li>Mi Home</li>
+          <li>Mi Authorized Stores</li>
+        </ul>
+      </div>
+      <div id="AboutUs">
+        <h6>ABOUT US</h6>
+        <ul>
+          <li>Xiaomi</li>
+          <li>
+            Mediakit
+          </li>
+          <li>Culture</li>
+          <li>User Agreement</li>
+          <li>Privacy Policy</li>
+          <li>Declarations</li>
+          <li>Integrity & Compliance</li>
+          <li>Smartphone Quality</li>
+          <li>TV Quality</li>
+          <li>Service Quality</li>
+          <li>Environment</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+      <div id="contactUs">
+        <h6>CONTACT US</h6>
+        <ul>
+          <li>Email</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div id="chat">
+        <p>Chat with our Virtual AI Bot
+          <br>
+          (24/7 Live Agent Support)</p>
+          <button id="chatBtn">CHAT NOW</button>
+      </div>
+    </div>
+
+    <div id="secondFoter">
+      <p>Copyright © 2010 - 2021 Xiaomi. All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
