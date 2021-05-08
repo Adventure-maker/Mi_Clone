@@ -59,22 +59,37 @@ a:hover {
     height: 100%;
 }
 
-/* header {
+header {
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    width: 100%;
+    color: #838383;
+    padding-top: 8px;
 }
 
 header>img {
     height: 60px;
     width: 60px;
     border-radius: 20px;
-} */
+}
 
-#slideshow>img {
-    height: 100%;
-    width: 100%;
+#searchBar {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+#searchItem {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #616161;
 }
 
 #cards {
