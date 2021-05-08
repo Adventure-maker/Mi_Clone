@@ -275,6 +275,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 
 .video {
@@ -284,8 +286,8 @@ a {
 
 .video>a {
     position: relative;
-    top: 30%;
-    right: 40%;
+    top: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     color: #999999;
     background-color: #e4e4e4;
@@ -624,6 +626,7 @@ li:hover {
 .videoModalCont {
     width: 70%;
     height: 70%;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -631,7 +634,6 @@ li:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 20px;
 }
 
 .video {
@@ -644,14 +646,14 @@ li:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    color: #ccc;
+    color: #ffffff;
 }
 
 .close {
     background: transparent;
     font-size: 25px;
     font-weight: 600;
-    color: #ccc;
+    color: #ffffff;
     outline: none;
     width: 30px;
     height: 30px;
@@ -660,8 +662,8 @@ li:hover {
 
 .close:hover {
     outline: none;
-    color: #616161;
-    background-color: #d0d0d0;
+    color: #505050;
+    background-color: #a0a0a0;
 }
 
 #videoCont2 {
