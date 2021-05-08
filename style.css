@@ -284,8 +284,8 @@ a {
 
 .video>a {
     position: relative;
-    top: 50%;
-    right: 50%;
+    top: 30%;
+    right: 40%;
     transform: translate(-50%, -50%);
     color: #999999;
     background-color: #e4e4e4;
@@ -604,4 +604,70 @@ li:hover {
     transform: translate(-50%, -50%);
     height: 650px;
     width: 450px;
+}
+
+
+
+/* video modal */
+
+.videoModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #5050509f;
+    z-index: 20;
+    display: none;
+}
+
+.videoModalCont {
+    width: 70%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+}
+
+.video {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #ccc;
+}
+
+.close {
+    background: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ccc;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.close:hover {
+    outline: none;
+    color: #616161;
+    background-color: #d0d0d0;
+}
+
+#videoCont2 {
+    display: none;
+}
+
+#videoCont3 {
+    display: none;
 }
