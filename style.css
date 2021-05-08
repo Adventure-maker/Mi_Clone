@@ -284,28 +284,23 @@ a {
 
 .video>a {
     position: relative;
-    top: 10%;
-    right: 45%;
-    transform: translate(-10%, -45%);
-    color: #cecece;
-}
-
-.playBtn {
-    font-size: 40px;
-    margin: auto;
-    margin-bottom: 100px;
-    height: 60px;
-    width: 60px;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    color: #999999;
+    background-color: #e4e4e4;
+    opacity: 0.6;
+    padding: 30px;
+    font-size: 25px;
     border-radius: 50%;
 }
 
-.videoTitle {
-    margin-top: 200px;
+.video>a:hover {
+    opacity: 1;
 }
 
-.playBtn:hover {
-    background-color: #fff;
-    color: #cecece;
+.videoTitle {
+    margin-top: 10px;
 }
 
 #features {
