@@ -48,6 +48,13 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .VideoPlay {
+        position: relative;
+        bottom: 200px;
+        left: 20px;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (max-width: 1200px) {
