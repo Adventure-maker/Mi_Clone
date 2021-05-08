@@ -49,6 +49,13 @@
         flex-wrap: wrap;
     }
 
+    .video {
+        width: 100%;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .VideoPlay {
         position: relative;
         bottom: 200px;
