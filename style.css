@@ -66,8 +66,9 @@ header {
     justify-content: space-around;
     position: absolute;
     top: 40px;
+    left: 20%;
     z-index: 10;
-    width: 100%;
+    width: 60%;
     color: #838383;
     padding-top: 8px;
 }
@@ -149,7 +150,7 @@ header>img {
 }
 
 .products {
-    margin: 4px;
+    margin: 2px;
 }
 
 .item {
